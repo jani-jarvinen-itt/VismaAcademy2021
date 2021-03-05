@@ -6,3 +6,7 @@ DotNet/HelloWorld/obj/
 /DotNet/CtsDemo/CtsDemo/obj/Debug
 /DotNet/CtsDemo/VisualBasicKirjasto/bin/Debug/netstandard2.0
 /DotNet/CtsDemo/VisualBasicKirjasto/obj
+/DotNet/CtsDemo/.vs/CtsDemo/DesignTimeBuild
+/DotNet/ArvaaLukuPeli/.vs/ArvaaLukuPeli/v16
+/DotNet/ArvaaLukuPeli/ArvaaLukuPeli/bin/Debug/net5.0
+/DotNet/ArvaaLukuPeli/ArvaaLukuPeli/obj
