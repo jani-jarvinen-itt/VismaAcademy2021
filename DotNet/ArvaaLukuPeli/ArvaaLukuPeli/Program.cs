@@ -9,7 +9,7 @@ namespace ArvaaLukuPeli
             Console.WriteLine("Tervetuloa peliin!");
             Random random = new Random();
             int oikea = random.Next(1, 21);
-            Console.WriteLine(oikea);
+            // Console.WriteLine(oikea);
 
             for (int arvausKerta = 1; arvausKerta <= 3; arvausKerta++)
             {
