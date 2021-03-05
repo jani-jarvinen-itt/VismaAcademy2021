@@ -1,3 +1,8 @@
 DotNet/HelloWorld/.vscode/
 DotNet/HelloWorld/bin/
 DotNet/HelloWorld/obj/
+/DotNet/CtsDemo/.vs/CtsDemo/v16
+/DotNet/CtsDemo/CtsDemo/bin/Debug
+/DotNet/CtsDemo/CtsDemo/obj/Debug
+/DotNet/CtsDemo/VisualBasicKirjasto/bin/Debug/netstandard2.0
+/DotNet/CtsDemo/VisualBasicKirjasto/obj
