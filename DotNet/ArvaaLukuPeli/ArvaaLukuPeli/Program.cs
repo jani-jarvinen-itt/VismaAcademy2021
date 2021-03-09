@@ -29,7 +29,7 @@ namespace ArvaaLukuPeli
                 {
                     Console.WriteLine("Arvasit oikein!");
                     break;
-                } 
+                }
             }
 
             Console.WriteLine("Peli on päättynyt.");
