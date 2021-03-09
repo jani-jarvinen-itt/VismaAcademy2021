@@ -18,3 +18,7 @@ DotNet/HelloWorld/obj/
 /DotNet/Muuttujat/Muuttujat/bin/Debug/net5.0
 /DotNet/Muuttujat/Muuttujat/obj/Debug/net5.0/ref/Muuttujat.dll
 /DotNet/Muuttujat/Muuttujat/obj
+/DotNet/Muuttujat/.vs/Muuttujat/DesignTimeBuild
+/DotNet/TiedostojenLukujenSumma/.vs/TiedostojenLukujenSumma/v16
+/DotNet/TiedostojenLukujenSumma/TiedostojenLukujenSumma/bin/Debug/net5.0
+/DotNet/TiedostojenLukujenSumma/TiedostojenLukujenSumma/obj
