@@ -12,7 +12,29 @@ namespace TiedostojenLukujenSumma
             string[] rivit = File.ReadAllLines(tiedostoNimi);
             foreach (string rivi in rivit)
             {
-                summa += int.Parse(rivi);
+                bool onnistui = int.TryParse(rivi, out int tulos);
+                if (onnistui)
+                {
+                    summa += tulos;
+                }
+                else
+                {
+                    Console.WriteLine($"Virheellinen numero: {rivi}.");
+                }
+                /*
+                try
+                {
+                    summa += int.Parse(rivi);
+                }
+                catch (FormatException fex)
+                {
+                    Console.WriteLine($"Virheellinen numero: {rivi}.");
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Tuntematon virhe, ohitetaan rivi.");
+                }
+                */
             }
 
             Console.WriteLine($"Tiedoston lukujen summa on: {summa}.");
