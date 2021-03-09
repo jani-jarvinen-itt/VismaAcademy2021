@@ -9,35 +9,42 @@ namespace TiedostojenLukujenSumma
         {
             string tiedostoNimi = @"C:\VismaAcademy\Git\DotNet\Numerot.txt";
             int summa = 0;
-            string[] rivit = File.ReadAllLines(tiedostoNimi);
-            foreach (string rivi in rivit)
+            try
             {
-                bool onnistui = int.TryParse(rivi, out int tulos);
-                if (onnistui)
+                string[] rivit = File.ReadAllLines(tiedostoNimi);
+                foreach (string rivi in rivit)
                 {
-                    summa += tulos;
+                    bool onnistui = int.TryParse(rivi, out int tulos);
+                    if (onnistui)
+                    {
+                        summa += tulos;
+                    }
+                    else
+                    {
+                        Console.WriteLine($"Virheellinen numero: {rivi}.");
+                    }
+                    /*
+                    try
+                    {
+                        summa += int.Parse(rivi);
+                    }
+                    catch (FormatException fex)
+                    {
+                        Console.WriteLine($"Virheellinen numero: {rivi}.");
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine("Tuntematon virhe, ohitetaan rivi.");
+                    }
+                    */
                 }
-                else
-                {
-                    Console.WriteLine($"Virheellinen numero: {rivi}.");
-                }
-                /*
-                try
-                {
-                    summa += int.Parse(rivi);
-                }
-                catch (FormatException fex)
-                {
-                    Console.WriteLine($"Virheellinen numero: {rivi}.");
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine("Tuntematon virhe, ohitetaan rivi.");
-                }
-                */
-            }
 
-            Console.WriteLine($"Tiedoston lukujen summa on: {summa}.");
+                Console.WriteLine($"Tiedoston lukujen summa on: {summa}.");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Odottamaton virhe: {ex.Message}");
+            }
         }
     }
 }
