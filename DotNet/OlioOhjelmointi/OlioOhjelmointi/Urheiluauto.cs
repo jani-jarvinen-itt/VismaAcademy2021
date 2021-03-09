@@ -8,6 +8,8 @@ namespace OlioOhjelmointi
 {
     public class Urheiluauto : Auto
     {
+        // private new string Väri { get; set; }
+
         public bool RättikattoAlhaalla { get; set; }
 
         public void KattoAlas()
