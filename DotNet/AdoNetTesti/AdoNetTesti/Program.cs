@@ -14,21 +14,41 @@ namespace AdoNetTesti
             Console.WriteLine("Avataan tietokantayhteys...");
             string yhteysmerkkijono = "Server=localhost\\SQLEXPRESS;Database=Northwind;Trusted_Connection=True;";
             SqlConnection yhteys = new SqlConnection(yhteysmerkkijono);
-            yhteys.Open();
-            Console.WriteLine("Tietokantayhteys avattu.");
-
-            string sql = "SELECT * FROM Customers WHERE Country = 'Finland'";
-            SqlCommand komento = new SqlCommand(sql, yhteys);
-
-            Console.WriteLine("Suoritetaan SQL-kysely...");
-            SqlDataReader lukija = komento.ExecuteReader();
-            while (lukija.Read())
+            try
             {
-                string yritys = lukija["CompanyName"].ToString();
-                Console.WriteLine(yritys);
-            }
+                yhteys.Open();
+                Console.WriteLine("Tietokantayhteys avattu.");
 
+                string sql = "SELECT * FROM Custmers WHERE Country = 'Finland'";
+                SqlCommand komento = new SqlCommand(sql, yhteys);
+                try
+                {
+                    Console.WriteLine("Suoritetaan SQL-kysely...");
+                    SqlDataReader lukija = komento.ExecuteReader();
+                    try
+                    {
+                        while (lukija.Read())
+                        {
+                            string yritys = lukija["CompanyName"].ToString();
+                            Console.WriteLine(yritys);
+                        }
+                    }
+                    finally
+                    {
+                        lukija.Close();
+                    }
+                }
+                finally
+                {
+                    komento.Dispose();
+                }
+            }
+            finally
+            {
+                yhteys.Close();
+            }
             Console.WriteLine("Suoritus päättyy.");
+            Console.ReadLine();
         }
     }
 }
