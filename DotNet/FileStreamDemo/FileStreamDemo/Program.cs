@@ -16,7 +16,7 @@ namespace FileStreamDemo
             // string merkintä = kellonaika + ": " + data + "\r\n";
             string merkintä = $"{kellonaika}: {data}\r\n";
 
-            /*
+            
              FileStream stream = new FileStream(tiedostoNimi,
                  FileMode.Append, FileAccess.Write);
              byte[] tavut = Encoding.UTF8.GetBytes(merkintä);
@@ -25,7 +25,7 @@ namespace FileStreamDemo
              // stream.Flush();   <-- Close()-metodi tekee tämän
              stream.Close();
              stream.Dispose();
-            */
+            
 
             /*
             using (FileStream stream = new FileStream(tiedostoNimi,

@@ -32,3 +32,6 @@ DotNet/HelloWorld/obj/
 /DotNet/WindowsFormsApp1/.vs/WindowsFormsApp1/v16
 /DotNet/WindowsFormsApp1/WindowsFormsApp1/bin/Debug
 /DotNet/WindowsFormsApp1/WindowsFormsApp1/obj/Debug
+/DotNet/EntityFrameworkDemo/.vs/EntityFrameworkDemo/v16
+/DotNet/EntityFrameworkDemo/EntityFrameworkDemo/bin/Debug/net5.0
+/DotNet/EntityFrameworkDemo/EntityFrameworkDemo/obj
