@@ -35,3 +35,7 @@ DotNet/HelloWorld/obj/
 /DotNet/EntityFrameworkDemo/.vs/EntityFrameworkDemo/v16
 /DotNet/EntityFrameworkDemo/EntityFrameworkDemo/bin/Debug/net5.0
 /DotNet/EntityFrameworkDemo/EntityFrameworkDemo/obj
+/DotNet/EntityFrameworkDemo/.vs/EntityFrameworkDemo/DesignTimeBuild
+/DotNet/NorthwindEntityDemo/.vs/NorthwindEntityDemo/v16
+/DotNet/NorthwindEntityDemo/NorthwindEntityDemo/bin/Debug/net5.0
+/DotNet/NorthwindEntityDemo/NorthwindEntityDemo/obj

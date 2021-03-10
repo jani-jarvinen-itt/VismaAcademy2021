@@ -1,0 +1,13 @@
+﻿Entity Framework -ohjeet
+------------------------
+
+1. Asenna seuraavat NuGet-paketit:
+
+- Microsoft.EntityFrameworkCore
+- Microsoft.EntityFrameworkCore.SqlServer
+- Microsoft.EntityFrameworkCore.Tools
+
+
+2. Aja seuraava komento Package Managed Consolessa:
+
+Scaffold-DbContext "Server=localhost\SQLEXPRESS;Database=Northwind;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
