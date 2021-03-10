@@ -2,14 +2,17 @@
 using NorthwindEntityDemo.Models;
 using System;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace NorthwindEntityDemo
 {
     class Program
     {
-        static void Main(string[] args)
+        static async void Main(string[] args)
         {
             NorthwindContext konteksti = new();
+
+            await konteksti.SaveChangesAsync();
 
             // LINQ-kysely
             var suomalaiset = from c in konteksti.Customers.Include("Orders")
@@ -22,6 +25,11 @@ namespace NorthwindEntityDemo
                 int tilaustenLkm = asiakas.Orders.Count();
 
                 Console.WriteLine($"Asiakkaalla {nimi} on {tilaustenLkm} kpl tilauksia.");
+
+                foreach (Order tilaus in asiakas.Orders)
+                {
+                    Console.WriteLine($"\t - {tilaus.OrderDate}.");
+                }
             }
 
             /*
