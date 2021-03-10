@@ -14,39 +14,33 @@ namespace AdoNetTesti
             Console.WriteLine("Avataan tietokantayhteys...");
             string yhteysmerkkijono = "Server=localhost\\SQLEXPRESS;Database=Northwind;Trusted_Connection=True;";
             SqlConnection yhteys = new SqlConnection(yhteysmerkkijono);
+            SqlCommand komento = null;
+            SqlDataReader lukija = null;
+
             try
             {
                 yhteys.Open();
                 Console.WriteLine("Tietokantayhteys avattu.");
 
                 string sql = "SELECT * FROM Custmers WHERE Country = 'Finland'";
-                SqlCommand komento = new SqlCommand(sql, yhteys);
-                try
+                komento = new SqlCommand(sql, yhteys);
+
+                Console.WriteLine("Suoritetaan SQL-kysely...");
+                lukija = komento.ExecuteReader();
+                while (lukija.Read())
                 {
-                    Console.WriteLine("Suoritetaan SQL-kysely...");
-                    SqlDataReader lukija = komento.ExecuteReader();
-                    try
-                    {
-                        while (lukija.Read())
-                        {
-                            string yritys = lukija["CompanyName"].ToString();
-                            Console.WriteLine(yritys);
-                        }
-                    }
-                    finally
-                    {
-                        lukija.Close();
-                    }
-                }
-                finally
-                {
-                    komento.Dispose();
+                    string yritys = lukija["CompanyName"].ToString();
+                    Console.WriteLine(yritys);
                 }
             }
             finally
             {
-                yhteys.Close();
+                // if (lukija != null) lukija.Close();
+                lukija?.Close();
+                komento?.Dispose();
+                yhteys?.Close();
             }
+
             Console.WriteLine("Suoritus päättyy.");
             Console.ReadLine();
         }
