@@ -39,7 +39,10 @@ DotNet/HelloWorld/obj/
 /DotNet/NorthwindEntityDemo/.vs/NorthwindEntityDemo/v16
 /DotNet/NorthwindEntityDemo/NorthwindEntityDemo/bin/Debug/net5.0
 /DotNet/NorthwindEntityDemo/NorthwindEntityDemo/obj
+<<<<<<< HEAD
 /DotNet/AspNetWebApiDemo/.vs/AspNetWebApiDemo
 /DotNet/AspNetWebApiDemo/AspNetWebApiDemo/bin/Debug/net5.0
 /DotNet/AspNetWebApiDemo/AspNetWebApiDemo/obj
 
+=======
+>>>>>>> 4e22684e7e9d19bdeec0f92d752092249b223b17
