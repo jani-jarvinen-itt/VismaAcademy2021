@@ -1,0 +1,3 @@
+﻿Scaffold-DbContext "Server=localhost\SQLEXPRESS;Database=Northwind;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Database\Northwind
+
+Scaffold-DbContext "Server=localhost\SQLEXPRESS;Database=AdventureWorks;Trusted_Connection=True;" Microsoft.EntityFrameworkCore.SqlServer -OutputDir Database\AdventureWorks
