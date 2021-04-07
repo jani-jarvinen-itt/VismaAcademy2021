@@ -60,3 +60,9 @@ DotNet/HelloWorld/obj/
 /DotNet/EntityMigraatiot/.vs/EntityMigraatiot/v16
 /DotNet/EntityMigraatiot/EntityMigraatiot/bin/Debug/net5.0
 /DotNet/EntityMigraatiot/EntityMigraatiot/obj
+/DotNet/EntityMigraatiot/.vs/EntityMigraatiot/DesignTimeBuild
+/DotNet/Yksikkötestaus/.vs/Yksikkötestaus/v16
+/DotNet/Yksikkötestaus/Yksikkötestaus/bin/Debug/net5.0
+/DotNet/Yksikkötestaus/Yksikkötestaus/obj
+/DotNet/Yksikkötestaus/YksikkötestausTests/bin/Debug/.netcoreapp,version=v5.0
+/DotNet/Yksikkötestaus/YksikkötestausTests/obj
