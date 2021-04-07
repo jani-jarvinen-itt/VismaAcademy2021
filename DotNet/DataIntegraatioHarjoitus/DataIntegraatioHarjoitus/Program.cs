@@ -31,6 +31,13 @@ namespace DataIntegraatioHarjoitus
                 adventure.People.Add(henkilö);
 
                 // ...
+
+                AW.BusinessEntity be = new()
+                {
+                    BusinessEntityId = 12345                    
+                };
+                adventure.BusinessEntities.Add(be);
+                adventure.SaveChanges();
             }
 
             // tallennus
