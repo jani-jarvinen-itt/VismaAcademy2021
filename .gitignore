@@ -56,3 +56,7 @@ DotNet/HelloWorld/obj/
 /DotNet/AspNetWebApiDemo2/.vs/AspNetWebApiDemo2/v16
 /DotNet/AspNetWebApiDemo2/AspNetWebApiDemo2/bin/Debug/net5.0
 /DotNet/AspNetWebApiDemo2/AspNetWebApiDemo2/obj
+/DotNet/AspNetWebApiDemo2/.vs/AspNetWebApiDemo2/config
+/DotNet/EntityMigraatiot/.vs/EntityMigraatiot/v16
+/DotNet/EntityMigraatiot/EntityMigraatiot/bin/Debug/net5.0
+/DotNet/EntityMigraatiot/EntityMigraatiot/obj
