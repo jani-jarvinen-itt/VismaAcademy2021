@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<asiakkaat>
+    <asiakas>
+        <nimi>Matti Möttönen</nimi>
+        <osoite>Kotikatu 12 B</osoite>
+    </asiakas>
+    <asiakas>
+        <nimi>Teppo Testaaja</nimi>
+        <osoite>Mäntykuja 4 A 13</osoite>
+    </asiakas>
+</asiakkaat>
