@@ -8,11 +8,22 @@ namespace NorthwindEntityDemo
 {
     class Program
     {
-        static async void Main(string[] args)
+        static async Task Main(string[] args)
         {
             NorthwindContext konteksti = new();
-
             await konteksti.SaveChangesAsync();
+
+            /*var shipNameTiedot = from o in konteksti.Orders
+                                 select new { o.ShipName };
+
+            var testi = from c in konteksti.Customers.Include("Orders")
+                        where c.Country == "Finland"
+                        select new { c.CustomerId, c.CompanyName, c.Orders };*/
+
+            var testi2 = from c in konteksti.Customers
+                         join o in konteksti.Orders on c.CustomerId equals o.CustomerId
+                         where c.Country == "Finland"
+                         select new { c.CustomerId, c.CompanyName, o.ShipName };
 
             // LINQ-kysely
             var suomalaiset = from c in konteksti.Customers.Include("Orders")
