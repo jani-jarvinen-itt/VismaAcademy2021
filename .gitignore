@@ -67,3 +67,12 @@ DotNet/HelloWorld/obj/
 /DotNet/Yksikkötestaus/YksikkötestausTests/bin/Debug/.netcoreapp,version=v5.0
 /DotNet/Yksikkötestaus/YksikkötestausTests/obj
 DotNet/Yksikkötestaus/.vs/Yksikkötestaus/DesignTimeBuild/.dtbcache.v2
+/DotNet/BlazorWebAssembly/.vs/BlazorWebAssembly
+/DotNet/BlazorWebAssembly/BlazorWebAssembly/Client/bin/Debug/net5.0
+/DotNet/BlazorWebAssembly/BlazorWebAssembly/Client/obj
+/DotNet/BlazorWebAssembly/BlazorWebAssembly/Server/bin/Debug/net5.0
+/DotNet/BlazorWebAssembly/BlazorWebAssembly/Server/obj
+/DotNet/BlazorWebAssembly/BlazorWebAssembly/Shared/bin/Debug/net5.0
+/DotNet/BlazorWebAssembly/BlazorWebAssembly/Shared/obj
+/DotNet/DataIntegraatioHarjoitus/.vs/DataIntegraatioHarjoitus/DesignTimeBuild
+/DotNet/NorthwindEntityDemo/.vs/NorthwindEntityDemo/DesignTimeBuild
