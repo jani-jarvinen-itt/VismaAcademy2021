@@ -7,3 +7,6 @@ console.log(luku);
 let taulukko = [];
 taulukko[5] = "Moi!";
 console.log(taulukko);
+
+const arvo = "ABCD";
+// arvo = "XYZ";
