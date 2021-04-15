@@ -9,8 +9,6 @@ ReactDOM.render(
   <React.StrictMode>
     <App />
     <OmaKomponentti nimi="Kake" />
-    <OmaKomponentti nimi="Pena" />
-    <OmaKomponentti nimi="Rape" />
   </React.StrictMode>,
   document.getElementById('root')
 );
