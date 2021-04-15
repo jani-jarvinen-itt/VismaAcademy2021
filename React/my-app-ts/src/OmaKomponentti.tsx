@@ -1,8 +1,17 @@
 import React from 'react';
 
-class OmaKomponentti extends React.Component {
+interface OmaKomponenttiProps {
+    nimi: string;
+}
+
+class OmaKomponentti extends React.Component<OmaKomponenttiProps, {}> {
     render() {
-        return <h1>Moi, olen OmaKomponentti.tsx!</h1>;
+        const muuttuja = "Testitesti";
+
+        return <>
+            <h1>Moi, olen OmaKomponentti.tsx! {muuttuja}</h1>
+            <p>Tervehdys {this.props.nimi}!</p>
+        </>;
     }
 }
 

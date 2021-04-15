@@ -8,7 +8,9 @@ import OmaKomponentti from './OmaKomponentti';
 ReactDOM.render(
   <React.StrictMode>
     <App />
-    <OmaKomponentti />
+    <OmaKomponentti nimi="Kake" />
+    <OmaKomponentti nimi="Pena" />
+    <OmaKomponentti nimi="Rape" />
   </React.StrictMode>,
   document.getElementById('root')
 );
