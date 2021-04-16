@@ -16,6 +16,8 @@ namespace AspNetWebApiDemo
 {
     public class Startup
     {
+        public const string OmaCorsPolicy = "OmaCorsPolitiikka";
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -26,6 +28,15 @@ namespace AspNetWebApiDemo
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(options =>
+            {
+                options.AddPolicy(name: OmaCorsPolicy,
+                                  builder =>
+                                  {
+                                      builder.AllowAnyOrigin().AllowAnyHeader();
+                                      // builder.WithOrigins("http://localhost:3000/");
+                                  });
+            });
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
@@ -47,6 +58,8 @@ namespace AspNetWebApiDemo
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseCors(OmaCorsPolicy);
 
             app.UseAuthorization();
 
