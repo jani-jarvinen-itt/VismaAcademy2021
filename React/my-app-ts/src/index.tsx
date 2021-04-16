@@ -3,12 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import OmaKomponentti from './OmaKomponentti';
+import OmaApiTesti from './OmaApiTesti';
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
-    <OmaKomponentti nimi="Kake" />
+    <OmaApiTesti />
   </React.StrictMode>,
   document.getElementById('root')
 );
