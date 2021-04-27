@@ -80,3 +80,7 @@ DotNet/Yksikkötestaus/.vs/Yksikkötestaus/DesignTimeBuild/.dtbcache.v2
 /DotNet/Kulttuurit/.vs/Kulttuurit/v16
 /DotNet/Kulttuurit/Kulttuurit/bin/Debug/net5.0
 /DotNet/Kulttuurit/Kulttuurit/obj
+/DotNet/AzureFunctionApp/.vs/AzureFunctionApp/v16
+/DotNet/AzureWebDemo/.vs/AzureWebDemo
+/DotNet/AzureWebDemo/AzureWebDemo/bin
+/DotNet/AzureWebDemo/AzureWebDemo/obj
